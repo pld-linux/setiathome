@@ -4,6 +4,8 @@ Name:		setiathome
 Version:	3.03
 Release:	1
 Group:		Applications/Console
+Group(de):	Applikationen/Konsole
+Group(pl):	Aplikacje/Konsola
 License:	Freeware
 %ifarch i386 i586
 %define _suffix i386-pc-linux-gnu-gnulibc2.1
@@ -17,9 +19,9 @@ License:	Freeware
 %ifarch alpha
 %define _suffix alpha-unknown-linux-gnu
 %endif
-Source0: ftp://alien.ssl.berkeley.edu/pub/%{name}-%{version}.%{_suffix}.tar
+Source0:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{version}.%{_suffix}.tar
 URL:		http://www.setiathome.com/
-ExclusiveArch: %{ix86} sparc alpha
+ExclusiveArch:	%{ix86} sparc alpha
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -33,7 +35,7 @@ Seti@home jest pakietem do marnowania czasu Twojego procesora :)
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -D setiathome $RPM_BUILD_ROOT/usr/bin/setiathome
+install -D setiathome $RPM_BUILD_ROOT%{_bindir}/setiathome
 
 gzip -9nf README
 
