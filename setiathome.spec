@@ -20,7 +20,7 @@ License:	Freeware
 %ifarch alpha
 %define _suffix alpha-unknown-linux-gnu
 %endif
-Source0:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{version}.%{_suffix}.tar
+Source0:	ftp://ftp.cdrom.com/pub/setiathome/%{name}-%{version}.%{_suffix}.tar
 URL:		http://www.setiathome.com/
 ExclusiveArch:	%{ix86} sparc alpha
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
