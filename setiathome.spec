@@ -2,7 +2,7 @@ Summary:	SETI@home client
 Summary(pl):	Klient SETI@home
 Name:		setiathome
 Version:	3.08
-Release:	1
+Release:	0.1
 Group:		Applications
 License:	Freeware
 %define	i386_suffix	i386-pc-linux-gnu-gnulibc2.1
