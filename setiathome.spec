@@ -16,24 +16,29 @@ License:	Freeware
 %define	ppc_version	3.03
 %ifarch %{ix86}
 %ifarch i686 athlon
-%define _suffix %{i686_suffix}
+%define	_suffix %{i686_suffix}
 %define	_srcnum	0
+%define	_version %{version}
 %else
-%define _suffix %{i386_suffix}
+%define	_suffix %{i386_suffix}
 %define	_srcnum	1
+%define	_version %{i386_version}
 %endif
 %endif
 %ifarch alpha
-%define _suffix %{alpha_suffix}
+%define	_suffix %{alpha_suffix}
 %define	_srcnum	2
+%define	_version %{alpha_version}
 %endif
 %ifarch sparc
-%define _suffix %{sparc_suffix}
+%define	_suffix %{sparc_suffix}
 %define	_srcnum	3
+%define	_version %{sparc_version}
 %endif
 %ifarch ppc
-%define _suffix %{ppc_suffix}
+%define	_suffix %{ppc_suffix}
 %define	_srcnum	4
+%define	_version %{ppc_version}
 %endif
 Source0:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{version}.%{i686_suffix}.tar
 # Source0-md5:	01d05178bd22c36b2e411dd12f23661a
@@ -55,7 +60,7 @@ Seti@home is a program to waste Your cpu time :)
 Seti@home jest pakietem do marnowania czasu Twojego procesora :)
 
 %prep
-%setup -q -T -b%{_srcnum} -n %{name}-%{version}.%{_suffix}
+%setup -q -T -b%{_srcnum} -n %{name}-%{_version}.%{_suffix}
 
 %install
 rm -rf $RPM_BUILD_ROOT
