@@ -36,10 +36,14 @@ License:	Freeware
 %define	_srcnum	4
 %endif
 Source0:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{version}.%{i686_suffix}.tar
+# Source0-md5:	01d05178bd22c36b2e411dd12f23661a
 Source1:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{i386_version}.%{i386_suffix}.tar
 Source2:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{alpha_version}.%{alpha_suffix}.tar
+# Source2-md5:	ddc9d38ffb5bc7c1189857fc054b7252
 Source3:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{sparc_version}.%{sparc_suffix}.tar
+# Source3-md5:	1091488f55cbbfa4451c3f03cc9f8177
 Source4:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{ppc_version}.%{ppc_suffix}.tar
+# Source4-md5:	cb47ccfd01e6f9764edb74ce37aa216b
 URL:		http://www.setiathome.com/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
