@@ -2,7 +2,7 @@ Summary:	SETI@home client
 Summary(pl):	Klient SETI@home
 Name:		setiathome
 Version:	3.08
-Release:	0.1
+Release:	0.2
 Group:		Applications
 License:	Freeware
 %define	i386_suffix	i386-pc-linux-gnu-gnulibc2.1
@@ -10,6 +10,10 @@ License:	Freeware
 %define	alpha_suffix	alpha-unknown-linux-gnu
 %define	sparc_suffix	sparc-unknown-linux-gnu
 %define	ppc_suffix	powerpc-unknown-linux-gnu
+%define	i386_version	3.03
+%define	alpha_version	3.03
+%define	sparc_version	3.03
+%define	ppc_version	3.03
 %ifarch %{ix86}
 %ifarch i686 athlon
 %define _suffix %{i686_suffix}
@@ -31,11 +35,11 @@ License:	Freeware
 %define _suffix %{ppc_suffix}
 %define	_srcnum	4
 %endif
-Source0:	ftp://ftp.cdrom.com/pub/setiathome/%{name}-%{version}.%{i686_suffix}.tar
-Source1:	ftp://ftp.cdrom.com/pub/setiathome/%{name}-%{version}.%{i386_suffix}.tar
-Source2:	ftp://ftp.cdrom.com/pub/setiathome/%{name}-%{version}.%{alpha_suffix}.tar
-Source3:	ftp://ftp.cdrom.com/pub/setiathome/%{name}-%{version}.%{sparc_suffix}.tar
-Source4:	ftp://ftp.cdrom.com/pub/setiathome/%{name}-%{version}.%{ppc_suffix}.tar
+Source0:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{version}.%{i686_suffix}.tar
+Source1:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{i386_version}.%{i386_suffix}.tar
+Source2:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{alpha_version}.%{alpha_suffix}.tar
+Source3:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{sparc_version}.%{sparc_suffix}.tar
+Source4:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{ppc_version}.%{ppc_suffix}.tar
 URL:		http://www.setiathome.com/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
