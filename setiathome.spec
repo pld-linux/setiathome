@@ -20,7 +20,7 @@ License:	Freeware
 %endif
 %endif
 %ifarch alpha
-%define _suffix %{alpha-unknown-linux-gnu}
+%define _suffix %{alpha_suffix}
 %define	_srcnum	2
 %endif
 %ifarch sparc
@@ -28,7 +28,7 @@ License:	Freeware
 %define	_srcnum	3
 %endif
 %ifarch ppc
-%define _suffix %{powerpc-unknown-linux-gnu}
+%define _suffix %{ppc_suffix}
 %define	_srcnum	4
 %endif
 Source0:	ftp://ftp.cdrom.com/pub/setiathome/%{name}-%{version}.%{i686_suffix}.tar
