@@ -10,7 +10,7 @@ License:	Freeware
 %define	alpha_suffix	alpha-unknown-linux-gnu
 %define	sparc_suffix	sparc-unknown-linux-gnu
 %define	ppc_suffix	powerpc-unknown-linux-gnu
-%define amd64_suffix	x86_64-pc-linux-gnu
+%define	amd64_suffix	x86_64-pc-linux-gnu
 %define	i386_version	3.03
 %define	alpha_version	3.03
 %define	sparc_version	3.03
