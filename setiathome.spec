@@ -4,8 +4,6 @@ Name:		setiathome
 Version:	3.03
 Release:	1
 Group:		Applications/Console
-Group(de):	Applikationen/Konsole
-Group(pl):	Aplikacje/Konsola
 License:	Freeware
 %ifarch %{ix86}
 %ifarch i686 athlon
