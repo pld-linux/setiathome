@@ -60,7 +60,7 @@ Source4:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{ppc_version}.%{ppc_suffix}.t
 # Source4-md5:	cb47ccfd01e6f9764edb74ce37aa216b
 Source5:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{amd64_version}.%{amd64_suffix}.tar
 # Source5-md5:	2e2f81600a0a427a759bf3459b068995
-URL:		http://www.setiathome.com/
+URL:		http://setiathome.ssl.berkeley.edu/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
