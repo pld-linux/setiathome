@@ -3,7 +3,7 @@ Summary(pl):	Klient SETI@home
 Name:		setiathome
 Version:	3.03
 Release:	2
-Group:		Applications/Console
+Group:		Applications
 License:	Freeware
 %define	i386_suffix	i386-pc-linux-gnu-gnulibc2.1
 %define	i686_suffix	i686-pc-linux-gnu-gnulibc2.1
