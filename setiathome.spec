@@ -38,6 +38,7 @@ License:	Freeware
 Source0:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{version}.%{i686_suffix}.tar
 # Source0-md5:	01d05178bd22c36b2e411dd12f23661a
 Source1:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{i386_version}.%{i386_suffix}.tar
+# Source1-md5:	6c0e5cd95c8005ffb658f968120be453
 Source2:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{alpha_version}.%{alpha_suffix}.tar
 # Source2-md5:	ddc9d38ffb5bc7c1189857fc054b7252
 Source3:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{sparc_version}.%{sparc_suffix}.tar
