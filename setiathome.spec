@@ -7,11 +7,12 @@ Group:		Applications/Console
 Group(de):	Applikationen/Konsole
 Group(pl):	Aplikacje/Konsola
 License:	Freeware
-%ifarch i386 i586
+%ifarch %{ix86}
+%ifarch i686 athlon
+%define _suffix i686-pc-linux-gnu-gnulibc2.1
+%else
 %define _suffix i386-pc-linux-gnu-gnulibc2.1
 %endif
-%ifarch i686
-%define _suffix i686-pc-linux-gnu-gnulibc2.1
 %endif
 %ifarch sparc
 %define _suffix sparc-unknown-linux-gnu
