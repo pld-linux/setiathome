@@ -42,7 +42,7 @@ License:	Freeware
 %define	_srcnum	4
 %define	_version %{ppc_version}
 %endif
-%ifarch amd64
+%ifarch %{x8664}
 %define	_suffix %{amd64_suffix}
 %define	_srcnum	5
 %define	_version %{amd64_version}
@@ -61,6 +61,7 @@ Source4:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{ppc_version}.%{ppc_suffix}.t
 Source5:	ftp://alien.ssl.berkeley.edu/pub/%{name}-%{amd64_version}.%{amd64_suffix}.tar
 # Source5-md5:	2e2f81600a0a427a759bf3459b068995
 URL:		http://setiathome.ssl.berkeley.edu/
+BuildRequires:	rpmbuild(macros) >= 1.213
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
