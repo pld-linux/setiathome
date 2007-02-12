@@ -1,5 +1,5 @@
 Summary:	SETI@home client
-Summary(pl):	Klient SETI@home
+Summary(pl.UTF-8):   Klient SETI@home
 Name:		setiathome
 Version:	3.08
 Release:	2
@@ -67,7 +67,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Seti@home is a program to waste Your cpu time :)
 
-%description -l pl
+%description -l pl.UTF-8
 Seti@home jest pakietem do marnowania czasu Twojego procesora :)
 
 %prep
