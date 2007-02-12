@@ -1,5 +1,5 @@
 Summary:	SETI@home client
-Summary(pl.UTF-8):   Klient SETI@home
+Summary(pl.UTF-8):	Klient SETI@home
 Name:		setiathome
 Version:	3.08
 Release:	2
